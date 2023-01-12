@@ -1,6 +1,6 @@
 {
   "name": "@stevenorcun/store-common",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
@@ -11,7 +11,8 @@
     "start:live": "webpack serve --open --mode development --live-reload --hot",
     "rollup": "rollup -c",
     "test": "jest",
-    "fix": "tsc --noEmit --pretty"
+    "fix": "tsc --noEmit --pretty",
+    "ammend": "git commit --amend --no-edit"
   },
   "license": "MIT",
   "author": {
