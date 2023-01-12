@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface CountState {
+export interface CountState {
   value: number;
 }
 
@@ -23,4 +23,4 @@ const countSlice = createSlice({
 
 export const { increment, decrement } = countSlice.actions;
 
-export const counterReducer = countSlice.reducer;
+export const countReducer = countSlice.reducer;

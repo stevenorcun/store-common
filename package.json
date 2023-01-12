@@ -1,6 +1,6 @@
 {
   "name": "@stevenorcun/store-common",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "rollup": "rollup -c",
     "test": "jest",
     "fix": "tsc --noEmit --pretty",
-    "ammend": "git commit --amend --no-edit"
+    "ammend": "git add . && git commit --amend --no-edit"
   },
   "license": "MIT",
   "author": {

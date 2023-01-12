@@ -7,7 +7,7 @@ interface Transaction {
   amount: number;
 }
 
-interface TransactionState {
+export interface TransactionState {
   transactions: Transaction[];
 }
 
@@ -15,7 +15,7 @@ const initialState: TransactionState = {
   transactions: [],
 };
 
-const transactionsSlice = createSlice({
+export const transactionsSlice = createSlice({
   name: "transactions",
   initialState,
   reducers: {
@@ -27,4 +27,4 @@ const transactionsSlice = createSlice({
 
 export const { addTransaction } = transactionsSlice.actions;
 
-export const transactionReducer = transactionsSlice.reducer;
+export const transactionsReducer = transactionsSlice.reducer;

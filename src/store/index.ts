@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./counterSlice";
-import transactionReducer from "./transactionsSlice";
+import { countReducer } from "./counterSlice";
+import { transactionsReducer } from "./transactionsSlice";
 
 const store = configureStore({
   reducer: {
-    counter: counterReducer,
-    transactions: transactionReducer,
+    counter: countReducer,
+    transactions: transactionsReducer,
   },
 });
 
